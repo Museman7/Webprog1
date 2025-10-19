@@ -1,0 +1,32 @@
+body {
+    background-color: powderblue;
+
+    }
+
+/*If the screen is under 1000 pixels, do this*/
+@media only screen and (max-width: 1000px) {
+    body {
+        background-color: lightpink;
+    }
+}
+
+h1 {
+    font-size: 100px;
+    font-size: clamp(5rem, 10vw, 7rem);
+    color: blue;
+    font-family: 'Comic Sans MS'
+}
+
+span.a {
+    color: deeppink;
+    font-size: 20px;
+}
+
+span.b {
+    color: deepskyblue;
+    font-size: 20px;
+}
+
+a:hover {
+    color: #66ccff;
+}
