@@ -1,7 +1,9 @@
 body {
     background-color: powderblue;
-
-    }
+    font-family: 'Comic Sans MS';
+    text-align: center;
+    font-size: clamp(1rem, 3vw, 3rem);
+}
 
 /*If the screen is under 1000 pixels, do this*/
 @media only screen and (max-width: 1000px) {
@@ -10,23 +12,52 @@ body {
     }
 }
 
-h1 {
-    font-size: 100px;
-    font-size: clamp(5rem, 10vw, 7rem);
-    color: blue;
-    font-family: 'Comic Sans MS'
+/*Main page header*/
+h1.a {
+    font-size: clamp(1rem, 10vw, 10rem);
+    text-align: center;
+    color: sandybrown;
+    /* Top, right, bottom, left*/
+    border-style: solid;
+    width: 55vw;
+    margin: 30px auto auto auto;
+}
+/*Secondary pages header*/
+h1.b {
+    font-size: clamp(1rem, 5vw, 5rem);
+    text-align: center;
+    color: sandybrown;
+    /* Top, right, bottom, left*/
+    border-style: solid;
+    width: 55vw;
+    margin: 30px auto 30px auto;
 }
 
+/*Testing out different classes*/
 span.a {
-    color: deeppink;
-    font-size: 20px;
+    color: lightpink;
 }
-
 span.b {
-    color: deepskyblue;
-    font-size: 20px;
+    color: powderblue;
 }
 
+/*Link changes color when hovering*/
 a:hover {
     color: #66ccff;
+}
+
+input {
+    font-family: 'Comic Sans MS';
+    font-size: clamp(1rem, 3vw, 3rem);
+    margin: auto auto 30px auto;
+}
+
+/*Image settings*/
+img {
+    width: 300px;
+    height: 20%;
+    object-fit: contain;
+}
+img:hover {
+    width: 400px;
 }

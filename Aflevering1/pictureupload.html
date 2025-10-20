@@ -10,6 +10,23 @@
 
     <body>
         <!--titlen på webpage-->
-        <h1> Upload Pictures </h1>
+        <h1 class="b"> Upload Pictures </h1>
+
+        <!--Action sends a form to the place stated, onsubmit triggers something when you submit-->
+        <form action="picture.html" onsubmit="message()" method="post">
+            <label for="newpicture">Select a file:</label>
+            <!--Id is frontend (CSS/HTML) name is what backend would recieve-->
+            <input type="file" id="newpicture" name="newpicture" accept="image/*"> <br />
+            <!--Would send the image to where is stated in 'action'
+            currently just goes back to pictures page (dont think too hard about it atm)-->
+            <input type="submit">
+        </form>
+
+        <!--Script that gives an alert when you trigger it-->
+        <script>
+            function message() {
+            alert("You succesfully submitted the picture!");
+            }
+        </script>
     </body>
 </html>
